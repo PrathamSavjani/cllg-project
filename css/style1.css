@@ -1,0 +1,115 @@
+
+:root {
+    --theme1: rgb(121,82,179);
+    --theme2: white;
+    --theme3: rgb(129,152,163);
+
+  }
+                                                           /* introduction */
+html{
+  scroll-behavior: smooth;
+}
+.maindivv{
+    background-color: var(--theme1);
+}
+/* navigation bar */
+a::selection{
+  background-color: var(--theme2);
+  color: var(--theme1);
+}
+.navbar{
+  padding: 0rem 0rem 4.5rem;
+  padding: 1%;
+  margin-bottom:3%;
+}
+.navbar-brand{
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+.nav-item{
+  padding:0px 18px;
+}
+/* main content */
+h1{
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 300%;
+  color: var(--theme2);
+}
+br{
+  visibility: hidden;
+}
+h1::selection{
+  background-color: var(--theme2);
+  color: var(--theme1);
+}
+.coll1{
+  padding: 10% 0% 14% 14%;
+}
+.coll2{
+  padding: 10% 10% 10% 15%;
+}
+                                                        /* features section */ 
+h3::selection{
+  background-color: var(--theme1);
+  color: var(--theme2);
+}                                                       
+#features{
+  padding: 7% 14%;
+}
+.featurebox{
+  text-align: center;
+}
+.fe-icon{
+  color: rgb(203, 174, 248);
+  font-size: 100px;
+  margin-bottom: 2rem;
+}
+.fe-icon:hover{
+  color: var(--theme1);
+}
+                                                        /* problems section */
+h5::selection{
+  background-color: var(--theme1);
+  color: var(--theme2);
+}
+img::selection{
+  background-color: var(--theme1);
+  color: var(--theme2);
+}
+.intro-prob{
+  color: var(--theme1);
+  padding: 7% 14%;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-align: center;
+}
+a{
+  color: var(--theme1);
+}
+h3{
+  font-size: 200%;
+}
+.media-body{
+   font-family: 'Work Sans', sans-serif;
+   color: var(--theme1);
+}
+.para-prob{
+  color: var(--theme3);
+}
+p::selection{
+  color: var(--theme2);
+  background-color: var(--theme1);
+}
+                                                           /* footer */
+b{
+  opacity: 0;
+}
+.futter{
+  text-align: center;
+  padding-left: 5%;
+  padding-top: 5%;
+  margin-bottom: -16px;
+}
+.COPY{
+  padding-top: 20px;
+}

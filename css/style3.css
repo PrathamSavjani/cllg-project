@@ -1,0 +1,90 @@
+
+:root {
+    --theme1: rgb(121,82,179);
+    --theme2: white;
+    --theme3: rgb(129,152,163);
+
+  }
+                                                           /* introduction */
+ .navbar-brand{
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+.maindivv{
+    background-color: var(--theme1);
+}
+a::selection{
+    background-color: var(--theme1);
+    color: var(--theme2);
+  }
+  .navbar{
+    padding: 0rem 0rem 4.5rem;
+    padding: 1%;
+    margin-bottom:3%;
+    background-color: var(--theme1);
+  }
+  .navbar-brand{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Ubuntu Condensed', sans-serif;
+  }
+  .nav-item{
+    padding:0px 18px;
+  }
+  a{
+      text-decoration: none;
+      color: black;
+  }
+  a:hover{
+      text-decoration: underline;
+      color: blueviolet;
+  }
+  .f-icons:hover{
+    color: var(--theme1);
+  }
+  .navbar-brand::selection{
+    background-color: var(--theme2);
+    color: var(--theme1);
+  }
+  br{
+    visibility: hidden;
+  }
+  td::selection{
+    color: var(--theme2);
+    background-color: var(--theme1);
+  }
+  p::selection{
+    color: var(--theme2);
+    background-color: var(--theme1);
+  }
+  .message{
+    background-color: #f7f7f7;
+    padding-top: 10px;
+  }
+  .sym{
+    font-size: 2rem;
+    color: rgb(126, 43, 250);
+  }
+  .send{
+    font-size: 2rem;
+  }
+  b{
+    opacity: 0;
+  }
+  .futter{
+    text-align: center;
+    padding-left: 5%;
+    padding-top: 5%;
+    margin-bottom: -16px;
+  }
+  .COPY{
+    padding-top: 20px;
+  }

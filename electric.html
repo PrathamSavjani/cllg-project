@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- favicon -->
+    <link rel="icon" href="media/favicon.png" type="image" sizes="16x16">
+    <!-- css file -->
+    <link rel="stylesheet" href="css/styles2.css">
+    <title>Electric</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <style>
+        .butun {
+          background: #ffffff;
+          border-radius: 28px;
+          text-shadow: 1px 1px 3px #6e41d1;
+          font-family: Georgia;
+          color: #7a45c9;
+          font-size: 15px;
+          padding: 10px 20px 10px 20px;
+          text-decoration: none;
+        }
+    
+        .butun:hover {
+          background: #ffffff;
+          text-decoration: none;
+        }
+      </style>
+</head>
+
+<body>
+    <div class="container-fluid maindivv ">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a href="#" class="navbar-brand" style="word-spacing: 5px;">
+              <i class="fas fa-home"></i>
+              House Problem Solving
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false" style="color: white;">
+                      Problems
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="plumbing.html">Plumbing</a>
+                      <a class="dropdown-item" href="wallpaint.html">Wall Painting</a>
+                      <a class="dropdown-item" href="electric.html">Electricity</a>
+                      <a class="dropdown-item" href="maid.html">Maid</a>
+                      <a class="dropdown-item" href="driver.html">Driver</a>
+                      <a class="dropdown-item" href="chef.html">Chef</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav-link" href="getjob.html">Get Job</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#footer">AboutUs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactus.html">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <button type="button" class="btn butun" data-toggle="modal" data-target="#exampleMoooodal1">
+                  Sign Up
+                </button>
+                &nbsp;<button type="button" class="btn butun" data-toggle="modal" data-target="#exampleMondal">
+                  Log In
+                </button>
+              </form>
+            </div>
+          </nav>
+          <!-- login modal -->
+          <div class="modal fade" id="exampleMondal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Registered Phone Number/Username/Email:</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Phn/Username/Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Password:</label>
+                      <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="password">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                  <a href="index.html"><button type="button" class="btn btn-outline-dark">Log In</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- sign up modal -->
+          <div class="modal fade" id="exampleMoooodal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header" style="font-family:'ubuntu';">
+                  <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="align-items-center">
+                      <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInput">Name</label>
+                        Your Name: <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Your Name">
+                      </div>
+                      <div class="col-auto">
+                        Create New Username:
+                        <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                          </div>
+                          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Your Username">
+                        </div>
+                      </div>
+                      <div class="align-items-center">
+                        <div class="col-auto">
+                          <label class="sr-only" for="inlineFormInput">Mobile Number</label>
+                          Mobile Number: <input type="number" class="form-control mb-2" id="inlineFormInput"
+                            placeholder="Your Number">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputPassword4">New Password:</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputPassword4">Confirm Password:</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-auto">
+                          <div class="form-check mb-2">
+                            <div class="form-row align-items-center">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto my-1">
+                      <label class="mr-sm-2" for="inlineFormCustomSelect"><span
+                          class="border border-primary"></span>&nbsp;&nbsp;&nbsp;Your location details for personalised
+                        experience</label>
+                      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option value="state" selected disabled>Select your state</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" id="inputCity" placeholder="City">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                  <a href="index.html"><button type="button" class="btn btn-outline-dark">Create Account</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1 style="color: rgb(96, 96, 168);">ELECTRICITY RELATED PROBLEM PARTNERS</h1>
+            </div>
+            <div class="row mx-5 my-4">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="data:image/jpeg;base64,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"
+                            class="card-img-top" alt="home tips logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Home Tips</h5>
+                            <p class="card-text">Electricity has become an essential part of contemporary life,
+                                energizing lights, appliances, heat, air conditioning etc.</p>
+                            <!-- Button trigger modal -->
+                            <a href="https://www.hometips.com/"><button type="button"
+                                    class="btn btn-outline-danger">Visit
+                                    Official Site</button></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.bajajelectricals.com/media/images/bellogo-2.svg" height="286px"
+                            class="card-img-top" alt="bajaj-logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Bajaj Electricals Limited</h5>
+                            <p class="card-text">Bajaj Electricals Limited (BEL), a globally renowned and trusted
+                                company, with a turnover of ₹6,744 crores (FY 18-19).</p>
+                            <!-- Button trigger modal -->
+                            <a href="https://www.bajajelectricals.com/"><button type="button"
+                                    class="btn btn-outline-danger">Visit Official Site</button></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.im.ge/2021/08/21/bzHv9.png" height="286px" class="card-img-top"
+                            alt="housejoy">
+                        <div class="card-body">
+                            <h5 class="card-title">Circuit Detective</h5>
+                            <p class="card-text">When troubleshooting electrical problems in a house, you can avoid
+                                frustration by learning about your electrical system.</p>
+                            <!-- Button trigger modal -->
+                            <a href="http://thecircuitdetective.com/bkgrd.php"><button type="button"
+                                    class="btn btn-outline-danger">Visit Official Site</button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mx-5 my-4">
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.ibb.co/3cc5Prt/esfi-temp.jpg" alt="esfi-temp" border="0">
+                        <div class="card-body">
+                            <h5 class="card-title">ESF<small>i</small></h5>
+                            <p class="card-text">Electricity plays an essential role in home operates. We rely on our
+                                home’s electrical system to provide power when need it.</p>
+                            <!-- Button trigger modal -->
+                            <a href="https://www.esfi.org/"><button type="button" class="btn btn-outline-danger">Visit
+                                    Official Site</button></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://download.logo.wine/logo/Alliant_Energy/Alliant_Energy-Logo.wine.png"
+                            class="card-img-top" alt="grohe" height="286px">
+                        <div class="card-body">
+                            <h5 class="card-title">Alliant Energy</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ex.
+                                Debitis impedit quod quisquam quidem.</p>
+                            <!-- Button trigger modal -->
+                            <a href="https://www.alliantenergy.com/"><button type="button"
+                                    class="btn btn-outline-danger">Visit Official Site</button></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.novec.com/images/novec-main_2.png" class="card-img-top" alt="toto"
+                            height="286px">
+                        <div class="card-body">
+                            <h5 class="card-title">Novec Energy</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sed,
+                                vel reiciendis qui voluptates eligendi?.</p>
+                            <!-- Button trigger modal -->
+                            <a href="https://www.novec.com/"><button type="button" class="btn btn-outline-danger">Visit
+                                    Official Site</button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mx-5 my-4">
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://productimages.withfloats.com/actual/58a43162bf507c09e83feb6e.jpg"
+                            class="card-img-top" alt="American Standard" height="286px">
+                        <div class="card-body">
+                            <h5 class="card-title">Polycab</h5>
+                            <p class="card-text">WELCOME TO THE WORLD OF ELECTRICAL SOLUTIONS. Polycab is one of India’s
+                                leading manufacturers of cables and wires.</p>
+                            <!-- Button trigger modal -->
+                            <a href="https://polycab.com/"><button type="button" class="btn btn-outline-danger">Visit
+                                    Official Site</button></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://docs.exideindustries.com/images/international-business/international-brands/exide-logo.jpg"
+                            height="286px" class="card-img-top" alt="Benjamin franklin">
+                        <div class="card-body">
+                            <h5 class="card-title">Exide</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                                iste sint omnis, consequatur voluptates laudantium? </p>
+                            <!-- Button trigger modal -->
+                            <a href="https://www.exideindustries.com/"><button type="button"
+                                    class="btn btn-outline-danger">Visit Official Site</button></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLRhZaW3WuKYU9x9aPBHmZQj95LzIC0GLN-v_r1Q3Q=s900-c-k-c0x00ffffff-no-rj"
+                            class="card-img-top" alt="DRPOTTS">
+                        <div class="card-body">
+                            <h5 class="card-title">Havells</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut culpa
+                                accusantium perferendis iusto reiciendis. Deleniti magni ut tempore et!</p>
+                            <!-- Button trigger modal -->
+                            <a href="https://www.havells.com/"><button type="button"
+                                    class="btn btn-outline-danger">Visit Official Site</button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1 style="color: rgb(96, 96, 168);">ELECTRICIANS AROUND YOUR AREA</h1>
+        </div>
+        <div class="row mx-5 my-4">
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn1.iconfinder.com/data/icons/man-profession-2/64/electrician-job-hire-avatar-512.png" class="card-img-top" alt="moen-logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Allie Grater <br> <span class="red">$10 per visit</span></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique modi vel quae libero deserunt aut.</p>
+                        <!-- Button trigger modal -->
+                        <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn1.iconfinder.com/data/icons/man-profession-2/64/electrician-job-hire-avatar-512.png" class="card-img-top" alt="prince-logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Isabelle Ringing <br> <span class="red">$12 per visit</span></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nisi dolorem asperiores voluptate temporibus a?</p>
+                        <!-- Button trigger modal -->
+                        <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn1.iconfinder.com/data/icons/man-profession-2/64/electrician-job-hire-avatar-512.png" class="card-img-top" alt="housejoy">
+                    <div class="card-body">
+                        <h5 class="card-title">Bea Mine <br> <span class="red">$9 per visit</span></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptates consectetur necessitatibus, qui perspiciatis eveniet.
+                            <br><br></p>
+                        <!-- Button trigger modal -->
+                        <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row mx-5 my-4">
+            <div class="col-md-4 d-flex justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn1.iconfinder.com/data/icons/man-profession-2/64/electrician-job-hire-avatar-512.png" class="card-img-top" alt="kohler">
+                    <div class="card-body">
+                        <h5 class="card-title">Rose Bush <br> <span class="red">$10 per visit</span></h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi asperiores deserunt aperiam, exercitationem voluptatibus cumque.</p>
+                        <!-- Button trigger modal -->
+                        <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn1.iconfinder.com/data/icons/man-profession-2/64/electrician-job-hire-avatar-512.png" class="card-img-top" alt="grohe" height="282px">
+                    <div class="card-body">
+                        <h5 class="card-title">Ivana B. Withew <br> <span class="red">$10 per visit</span></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam amet culpa quam aspernatur maxime nesciunt!</p>
+                        <!-- Button trigger modal -->
+                        <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn1.iconfinder.com/data/icons/man-profession-2/64/electrician-job-hire-avatar-512.png" class="card-img-top" alt="toto" height="282px">
+                    <div class="card-body">
+                        <h5 class="card-title">Theresa Green <br> <span class="red">$10 per visit</span></h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, similique ipsa. Provident vero et nulla.</p>
+                        <!-- Button trigger modal -->
+                        <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row mx-5 my-4">
+            <div class="col-md-4 d-flex justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn1.iconfinder.com/data/icons/man-profession-2/64/electrician-job-hire-avatar-512.png" class="card-img-top" alt="American Standard" height="286px">
+                    <div class="card-body">
+                        <h5 class="card-title">Sarah Moanees <br> <span class="red">$15 per visit</span></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nostrum amet laboriosam soluta temporibus at.<br><br></p>
+                        <!-- Button trigger modal -->
+                        <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn1.iconfinder.com/data/icons/man-profession-2/64/electrician-job-hire-avatar-512.png" height="286px" class="card-img-top" alt="Benjamin franklin">
+                    <div class="card-body">
+                        <h5 class="card-title">Sly Meedentalfloss <br> <span class="red">$12 per visit</span></h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis magni nisi nulla! Repellat, iusto rerum.</p>
+                        <!-- Button trigger modal -->
+                        <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn1.iconfinder.com/data/icons/man-profession-2/64/electrician-job-hire-avatar-512.png" class="card-img-top" alt="DRPOTTS">
+                    <div class="card-body">
+                        <h5 class="card-title">Anne T. Dote <br> <span class="red">$14 per visit</span></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime minus inventore doloremque in nobis ullam!<br>
+                        </p>
+                        <!-- Button trigger modal -->
+                        <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-dark alert-dismissible fade show" role="alert" style="word-spacing: 5px;">
+        <strong>Note:</strong> We won't be accountable for any type of mismanagement by our partners. We only act as a
+        mediator.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div><br><br>
+    <!-- footer -->
+    <div class="container-fluid futter" style="background-color: rgb(28,35,49);" id="footer">
+        <div class="row foot-logo">
+            <div class="col-sm-3 px-0">
+                <img src="media/hps-logo3.png" alt="logo-foot" width="100%" style="float: left;">
+            </div>
+            <div class="col-sm-3 offset-md-6" style="padding-top: 40px;text-align: center;">
+                <a href="https://www.facebook.com/pratham.savjani"><i class="fab fa-facebook fa-3x"
+                        style="color: rgb(17,151,245);"></i><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+                <a href="https://instagram.com/memes_p.s?utm_medium=copy_link"><i class="fab fa-instagram fa-3x"
+                        style="color: rgb(220,61,129);"></i><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+                <a href="https://github.com/PrathamSavjani"><i class="fab fa-github fa-3x"
+                        style="color: rgb(255, 255, 255);"></i><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+                <a href="https://in.linkedin.com/in/pratham-savjani-475366203"><i class="fab fa-linkedin fa-3x"
+                        style="color: rgb(76,110,245);"></i></a>
+            </div>
+        </div>
+        <p class="COPY" style="color: white;">© Made by Pratham Savjani</p>
+    </div>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</body>
+
+</html>

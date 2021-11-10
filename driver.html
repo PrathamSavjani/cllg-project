@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- favicon -->
+    <link rel="icon" href="media/favicon.png" type="image" sizes="16x16">
+    <!-- css file -->
+    <link rel="stylesheet" href="css/styles2.css">
+    <title>Driver</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <style>
+        .butun {
+          background: #ffffff;
+          border-radius: 28px;
+          text-shadow: 1px 1px 3px #6e41d1;
+          font-family: Georgia;
+          color: #7a45c9;
+          font-size: 15px;
+          padding: 10px 20px 10px 20px;
+          text-decoration: none;
+        }
+    
+        .butun:hover {
+          background: #ffffff;
+          text-decoration: none;
+        }
+      </style>
+</head>
+
+<body>
+    <div class="container-fluid maindivv ">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a href="#" class="navbar-brand" style="word-spacing: 5px;">
+              <i class="fas fa-home"></i>
+              House Problem Solving
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false" style="color: white;">
+                      Problems
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="plumbing.html">Plumbing</a>
+                      <a class="dropdown-item" href="wallpaint.html">Wall Painting</a>
+                      <a class="dropdown-item" href="electric.html">Electricity</a>
+                      <a class="dropdown-item" href="maid.html">Maid</a>
+                      <a class="dropdown-item" href="driver.html">Driver</a>
+                      <a class="dropdown-item" href="chef.html">Chef</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav-link" href="getjob.html">Get Job</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#footer">AboutUs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactus.html">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <button type="button" class="btn butun" data-toggle="modal" data-target="#exampleMoooodal1">
+                  Sign Up
+                </button>
+                &nbsp;<button type="button" class="btn butun" data-toggle="modal" data-target="#exampleMondal">
+                  Log In
+                </button>
+              </form>
+            </div>
+          </nav>
+          <!-- login modal -->
+          <div class="modal fade" id="exampleMondal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Registered Phone Number/Username/Email:</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Phn/Username/Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Password:</label>
+                      <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="password">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                  <a href="index.html"><button type="button" class="btn btn-outline-dark">Log In</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- sign up modal -->
+          <div class="modal fade" id="exampleMoooodal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header" style="font-family:'ubuntu';">
+                  <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="align-items-center">
+                      <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInput">Name</label>
+                        Your Name: <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Your Name">
+                      </div>
+                      <div class="col-auto">
+                        Create New Username:
+                        <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                          </div>
+                          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Your Username">
+                        </div>
+                      </div>
+                      <div class="align-items-center">
+                        <div class="col-auto">
+                          <label class="sr-only" for="inlineFormInput">Mobile Number</label>
+                          Mobile Number: <input type="number" class="form-control mb-2" id="inlineFormInput"
+                            placeholder="Your Number">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputPassword4">New Password:</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputPassword4">Confirm Password:</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-auto">
+                          <div class="form-check mb-2">
+                            <div class="form-row align-items-center">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto my-1">
+                      <label class="mr-sm-2" for="inlineFormCustomSelect"><span
+                          class="border border-primary"></span>&nbsp;&nbsp;&nbsp;Your location details for personalised
+                        experience</label>
+                      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option value="state" selected disabled>Select your state</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" id="inputCity" placeholder="City">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                  <a href="index.html"><button type="button" class="btn btn-outline-dark">Create Account</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1 style="color: rgb(96, 96, 168);">DRIVERS AROUND YOUR AREA</h1>
+            </div>
+            <div class="row mx-5 my-4">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://bmmagazine.co.uk/wp-content/uploads/2018/08/shutterstock_637957153-e1533407882708.jpg"
+                            height="286px" class="card-img-top" alt="moen-logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Edward <br><span class="red">$50 p.m.</span></h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, minus
+                                maxime. Nemo eos magnam magni.</p>
+                            <!-- Button trigger modal -->
+                            <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.driveu.in/static/web/v4/images/trust-image.png" height="286px"
+                            class="card-img-top" alt="prince-logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Alexander <br><span class="red">$45 p.m.</span></h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo in
+                                perspiciatis, sequi possimus mollitia culpa.</p>
+                            <!-- Button trigger modal -->
+                            <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.driveu.in/static/web/v4/images/happy-drivers-image.png" height="286px"
+                            class="card-img-top" alt="housejoy">
+                        <div class="card-body">
+                            <h5 class="card-title">Amanda <br><span class="red">$40 p.m.</span></h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iusto
+                                maiores quos explicabo veritatis nisi!</p>
+                            <!-- Button trigger modal -->
+                            <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mx-5 my-4">
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://us.123rf.com/450wm/antoniodiaz/antoniodiaz1807/antoniodiaz180701229/105282930-portrait-of-good-looking-young-hispanic-man-sitting-in-the-driving-seat-of-the-car-and-looking-back-.jpg?ver=6"
+                            height="286px" class="card-img-top" alt="kohler">
+                        <div class="card-body">
+                            <h5 class="card-title">Gavin <br><span class="red">$52 p.m.</span></h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et deleniti
+                                commodi numquam facere dolore rem?</p>
+                            <!-- Button trigger modal -->
+                            <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="http://blog.insurify.com/wp-content/uploads/2020/10/shutterstock_61279369-scaled-e1603137710607.jpg"
+                            class="card-img-top" alt="grohe" height="286px">
+                        <div class="card-body">
+                            <h5 class="card-title">Julia <br><span class="red">$54 p.m.</span></h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magnam sunt earum! Suscipit, iure perspiciatis.</p>
+                            <!-- Button trigger modal -->
+                            <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.ziprecruiter.com/blog/static/wp-content/uploads/2019/11/28160613/1128536350_Car-Driver.jpg"
+                            class="card-img-top" alt="toto" height="286px">
+                        <div class="card-body">
+                            <h5 class="card-title">Christopher <br><span class="red">$56 p.m.</span></h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+                                amet dolorum! Nisi ad repellat minima.</p>
+                            <!-- Button trigger modal -->
+                            <a href="registration.html"><button type="button" class="btn btn-outline-danger">
+                                    Hire Me Now</button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mx-5 my-4">
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://vivahr.com/wp-content/uploads/2019/01/Professional-Driver-Job-Description.jpg"
+                            class="card-img-top" alt="American Standard" height="286px">
+                        <div class="card-body">
+                            <h5 class="card-title">Vanessa <br><span class="red">$35 p.m.</span></h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
+                                explicabo, porro facere commodi debitis distinctio?</p>
+                            <!-- Button trigger modal -->
+                            <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://pbs.twimg.com/media/EOqzwUeWkAAwB9P.jpg" height="286px" class="card-img-top"
+                            alt="Benjamin franklin">
+                        <div class="card-body">
+                            <h5 class="card-title">Johnny <br><span class="red">$60 p.m.</span></h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                                aliquam doloribus quam doloremque ipsa consequuntur!</p>
+                            <!-- Button trigger modal -->
+                            <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://forbesmoz.com/wp-content/uploads/2018/09/54fgg.png" height="286px"
+                            class="card-img-top" alt="DRPOTTS">
+                        <div class="card-body">
+                            <h5 class="card-title">Elliot <br><span class="red">$70 p.m.</span></h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste eligendi
+                                quas, magni enim dignissimos saepe!</p>
+                            <!-- Button trigger modal -->
+                            <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="alert alert-dark alert-dismissible fade show" role="alert" style="word-spacing: 5px;">
+        <strong>Note:</strong> We won't be accountable for any type of mismanagement by our partners. We only act as a
+        mediator.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div><br><br>
+    <!-- footer -->
+    <div class="container-fluid futter" style="background-color: rgb(28,35,49);" id="footer">
+        <div class="row foot-logo">
+            <div class="col-sm-3 px-0">
+                <img src="media/hps-logo3.png" alt="logo-foot" width="100%" style="float: left;">
+            </div>
+            <div class="col-sm-3 offset-md-6" style="padding-top: 40px;text-align: center;">
+                <a href="https://www.facebook.com/pratham.savjani"><i class="fab fa-facebook fa-3x"
+                        style="color: rgb(17,151,245);"></i><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+                <a href="https://instagram.com/memes_p.s?utm_medium=copy_link"><i class="fab fa-instagram fa-3x"
+                        style="color: rgb(220,61,129);"></i><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+                <a href="https://github.com/PrathamSavjani"><i class="fab fa-github fa-3x"
+                        style="color: rgb(255, 255, 255);"></i><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+                <a href="https://in.linkedin.com/in/pratham-savjani-475366203"><i class="fab fa-linkedin fa-3x"
+                        style="color: rgb(76,110,245);"></i></a>
+            </div>
+        </div>
+        <p class="COPY" style="color: white;">© Made by Pratham Savjani</p>
+    </div>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</body>
+
+</html>

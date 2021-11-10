@@ -1,0 +1,102 @@
+:root {
+    --theme1: rgb(121,82,179);
+    --theme2: white;
+    --theme3: rgb(129,152,163);
+
+  }
+                                                           /* introduction */
+body{
+  background-color: var(--theme1);
+}
+html{
+  scroll-behavior: smooth;
+}
+*{
+  font-family: 'Nunito', sans-serif;
+}
+h1{
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 300%;
+  color: var(--theme2);
+  text-align: center;
+}
+h1::selection{
+  background-color: var(--theme2);
+  color: var(--theme1);
+}
+/* navigation bar */
+a::selection{
+    background-color: var(--theme2);
+    color: var(--theme1);
+  }
+  .navbar{
+    padding: 0rem 0rem 4.5rem;
+    padding: 1%;
+    margin-bottom:3%;
+  }
+  .navbar-brand{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Ubuntu Condensed', sans-serif;
+  }
+  .nav-item{
+    padding:0px 18px;
+  }
+  /* cards section */
+  .col-md-4 {
+    padding: 0px;
+    margin: auto -10px;
+}
+.card-body {
+    padding: 0px;
+    text-align: center;
+    padding: 20px;
+}
+.card{
+    margin: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(161, 100, 253);
+}
+.card:hover{
+    margin-top: 5px;
+}
+/* footer */
+b{
+  opacity: 0;
+}
+.futter{
+  text-align: center;
+  padding-left: 5%;
+  padding-top: 5%;
+  margin-bottom: -16px;
+}
+.COPY{
+  padding-top: 20px;
+}
+h5::selection{
+  background-color: var(--theme1);
+  color: var(--theme2);
+}
+img::selection{
+  background-color: var(--theme1);
+  color: var(--theme2);
+}
+p::selection{
+  color: var(--theme2);
+  background-color: var(--theme1);
+}
+h5{
+  color: rgb(102, 30, 211);
+}
+p{
+  color: rgb(80, 77, 77);
+}
+.red{
+  color: crimson;
+}
+br{
+  visibility: hidden;
+}
+span::selection{
+  background-color: crimson;
+  color: white;
+}

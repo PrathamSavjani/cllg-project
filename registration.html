@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style3.css">
+    <!-- favicon -->
+    <link rel="icon" href="media/favicon.png" type="image" sizes="16x16">
+    <title>Registration</title>
+    <!--googlefonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        .butun {
+          background: #ffffff;
+          border-radius: 28px;
+          text-shadow: 1px 1px 3px #6e41d1;
+          font-family: Georgia;
+          color: #7a45c9;
+          font-size: 15px;
+          padding: 10px 20px 10px 20px;
+          text-decoration: none;
+        }
+    
+        .butun:hover {
+          background: #ffffff;
+          text-decoration: none;
+        }
+      </style>
+</head>
+
+<body>
+    <div class="container-fluid maindivv ">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a href="#" class="navbar-brand" style="word-spacing: 5px;">
+              <i class="fas fa-home"></i>
+              House Problem Solving
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false" style="color:rgb(184,150,199);">
+                      Problems
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="plumbing.html">Plumbing</a>
+                      <a class="dropdown-item" href="wallpaint.html">Wall Painting</a>
+                      <a class="dropdown-item" href="electric.html">Electricity</a>
+                      <a class="dropdown-item" href="maid.html">Maid</a>
+                      <a class="dropdown-item" href="driver.html">Driver</a>
+                      <a class="dropdown-item" href="chef.html">Chef</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav-link" href="getjob.html">Get Job</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#footer">AboutUs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactus.html">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <button type="button" class="btn butun" data-toggle="modal" data-target="#exampleMoooodal1">
+                  Sign Up
+                </button>
+                &nbsp;<button type="button" class="btn butun" data-toggle="modal" data-target="#exampleMondal">
+                  Log In
+                </button>
+              </form>
+            </div>
+          </nav>
+          <!-- login modal -->
+          <div class="modal fade" id="exampleMondal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Registered Phone Number/Username/Email:</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Phn/Username/Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Password:</label>
+                      <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="password">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                  <a href="index.html"><button type="button" class="btn btn-outline-dark">Log In</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- sign up modal -->
+          <div class="modal fade" id="exampleMoooodal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header" style="font-family:'ubuntu';">
+                  <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="align-items-center">
+                      <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInput">Name</label>
+                        Your Name: <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Your Name">
+                      </div>
+                      <div class="col-auto">
+                        Create New Username:
+                        <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                          </div>
+                          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Your Username">
+                        </div>
+                      </div>
+                      <div class="align-items-center">
+                        <div class="col-auto">
+                          <label class="sr-only" for="inlineFormInput">Mobile Number</label>
+                          Mobile Number: <input type="number" class="form-control mb-2" id="inlineFormInput"
+                            placeholder="Your Number">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputPassword4">New Password:</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputPassword4">Confirm Password:</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-auto">
+                          <div class="form-check mb-2">
+                            <div class="form-row align-items-center">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto my-1">
+                      <label class="mr-sm-2" for="inlineFormCustomSelect"><span
+                          class="border border-primary"></span>&nbsp;&nbsp;&nbsp;Your location details for personalised
+                        experience</label>
+                      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option value="state" selected disabled>Select your state</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" id="inputCity" placeholder="City">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                  <a href="index.html"><button type="button" class="btn btn-outline-dark">Create Account</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="container">
+        <form>
+            <h2>Let us gather some details about you before you hire.</h2><br>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">First Name</label>
+                    <input type="text" class=" form-control" id="inputEmail4" placeholder="First Name">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Last Name</label>
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Phone Number</label>
+                <input type="number" class="form-control" placeholder="Phone Number">
+            </div>
+
+            <div class="form-group">
+                <label for="inputAddress">Email Address</label>
+                <input type="email" class="form-control" placeholder="Email Address">
+            </div>
+
+            <div class="form-group">
+                <label for="inputAddress">Date of visiting</label>
+                <input type="date" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" placeholder="City" id="inputCity">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                        <option value="state" selected disabled>Select your state</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Pin Code</label>
+                    <input type="text" class="form-control" id="inputZip" placeholder="Pin Code">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        I agree to pay the amount as mentioned to the person I am hireing.
+                    </label>
+                </div>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
+                Hire Now
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Success!!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                        <div class="text-center">
+                            <img src="media/TEMP.gif" alt="tickmark" class="img-thumbnail" width="300px"><br><br>
+                        </div>
+                            <h2>You have hired successfully!!</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br><br>
+    <!-- footer -->
+    <div class="container-fluid futter" style="background-color: rgb(28,35,49);" id="footer">
+        <div class="row foot-logo">
+            <div class="col-sm-3 px-0">
+                <img src="media/hps-logo3.png" alt="logo-foot" width="100%" style="float: left;">
+            </div>
+            <div class="col-sm-3 offset-md-6" style="padding-top: 40px;text-align: center;">
+                <a href="https://www.facebook.com/pratham.savjani"><i class="fab fa-facebook fa-3x"
+                        style="color: rgb(17,151,245);"></i><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+                <a href="https://instagram.com/memes_p.s?utm_medium=copy_link"><i class="fab fa-instagram fa-3x"
+                        style="color: rgb(220,61,129);"></i><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+                <a href="https://github.com/PrathamSavjani"><i class="fab fa-github fa-3x"
+                        style="color: rgb(255, 255, 255);"></i><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+                <a href="https://in.linkedin.com/in/pratham-savjani-475366203"><i class="fab fa-linkedin fa-3x"
+                        style="color: rgb(76,110,245);"></i></a>
+            </div>
+        </div>
+        <p class="COPY" style="color: white;">© Made by Pratham Savjani</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</body>
+
+</html>

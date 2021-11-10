@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- favicon -->
+    <link rel="icon" href="media/favicon.png" type="image" sizes="16x16">
+    <!-- css file -->
+    <link rel="stylesheet" href="css/styles2.css">
+    <title>Wall Painting</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <style>
+        .butun {
+          background: #ffffff;
+          border-radius: 28px;
+          text-shadow: 1px 1px 3px #6e41d1;
+          font-family: Georgia;
+          color: #7a45c9;
+          font-size: 15px;
+          padding: 10px 20px 10px 20px;
+          text-decoration: none;
+        }
+    
+        .butun:hover {
+          background: #ffffff;
+          text-decoration: none;
+        }
+      </style>
+</head>
+
+<body>
+    <div class="container-fluid maindivv ">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a href="#" class="navbar-brand" style="word-spacing: 5px;">
+              <i class="fas fa-home"></i>
+              House Problem Solving
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false" style="color: white;">
+                      Problems
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="plumbing.html">Plumbing</a>
+                      <a class="dropdown-item" href="wallpaint.html">Wall Painting</a>
+                      <a class="dropdown-item" href="electric.html">Electricity</a>
+                      <a class="dropdown-item" href="maid.html">Maid</a>
+                      <a class="dropdown-item" href="driver.html">Driver</a>
+                      <a class="dropdown-item" href="chef.html">Chef</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav-link" href="getjob.html">Get Job</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#footer">AboutUs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactus.html">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <button type="button" class="btn butun" data-toggle="modal" data-target="#exampleMoooodal1">
+                  Sign Up
+                </button>
+                &nbsp;<button type="button" class="btn butun" data-toggle="modal" data-target="#exampleMondal">
+                  Log In
+                </button>
+              </form>
+            </div>
+          </nav>
+          <!-- login modal -->
+          <div class="modal fade" id="exampleMondal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Registered Phone Number/Username/Email:</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Phn/Username/Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Password:</label>
+                      <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="password">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                  <a href="index.html"><button type="button" class="btn btn-outline-dark">Log In</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- sign up modal -->
+          <div class="modal fade" id="exampleMoooodal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header" style="font-family:'ubuntu';">
+                  <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="align-items-center">
+                      <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInput">Name</label>
+                        Your Name: <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Your Name">
+                      </div>
+                      <div class="col-auto">
+                        Create New Username:
+                        <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                          </div>
+                          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Your Username">
+                        </div>
+                      </div>
+                      <div class="align-items-center">
+                        <div class="col-auto">
+                          <label class="sr-only" for="inlineFormInput">Mobile Number</label>
+                          Mobile Number: <input type="number" class="form-control mb-2" id="inlineFormInput"
+                            placeholder="Your Number">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputPassword4">New Password:</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputPassword4">Confirm Password:</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-auto">
+                          <div class="form-check mb-2">
+                            <div class="form-row align-items-center">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto my-1">
+                      <label class="mr-sm-2" for="inlineFormCustomSelect"><span
+                          class="border border-primary"></span>&nbsp;&nbsp;&nbsp;Your location details for personalised
+                        experience</label>
+                      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option value="state" selected disabled>Select your state</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" id="inputCity" placeholder="City">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                  <a href="index.html"><button type="button" class="btn btn-outline-dark">Create Account</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1 style="color: rgb(96, 96, 168);">OUR WALL-PAINTING RELATED PROBLEM PARTNERS</h1>
+            </div>
+            <div class="row mx-5 my-4">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="http://1.bp.blogspot.com/-dOYokO7qAbw/UGt0IgKL5FI/AAAAAAAANrc/3b1aoHBMvAA/s1600/Asian+Paints+logo+2012.png"
+                            height="286px" class="card-img-top" alt="asian paints-logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Asian Paints</h5>
+                            <p class="card-text">Get the right assistance for all your painting needs.
+                                Visit to book a free site evaluation by an Asian Paints Safe Service expert.</p>
+                            <!-- Button trigger modal -->
+                            <a href="https://www.asianpaints.com/inspiration/ideas/inspiration-gallery.html"><button
+                                    type="button" class="btn btn-outline-danger">Visit
+                                    Official Site</button></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.nipponpaint.com/wp-content/uploads/2018/01/Nippon-web-headervideo-logo-01-72.png"
+                            height="286px" class="card-img-top" alt="nippon paints">
+                        <div class="card-body">
+                            <h5 class="card-title">Nippon Paints</h5>
+                            <p class="card-text">Nothing transforms a room than a wall paint, take in the-best wall
+                                painting ideas presented to you by Nippon Paint.</p>
+                            <!-- Button trigger modal -->
+                            <a href="https://www.nipponpaint.co.in/best-interior-paint-colors-for-home/"><button
+                                    type="button" class="btn btn-outline-danger">Visit Official Site</button></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.ibb.co/whFcr5S/dulux-temp.png"
+                            height="286px" class="card-img-top" alt="dulux">
+                        <div class="card-body">
+                            <h5 class="card-title">Dulux Paints</h5>
+                            <p class="card-text"> Smart way to beautify and protect your house exterioe is none other
+                                than only lulux paints. Visit dulux paints now.</p>
+                            <!-- Button trigger modal -->
+                            <a href="https://www.dulux.in/en/colour-inspiration"><button type="button"
+                                    class="btn btn-outline-danger">Visit Official Site</button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mx-5 my-4">
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/280x280_RS/5e/28/c0/5e28c07a5ca25108c088e678a492f21d.jpg"
+                            class="card-img-top" alt="kohler">
+                        <div class="card-body">
+                            <h5 class="card-title">Berger Paints</h5>
+                            <p class="card-text">Bring home the happiest colour in the spectrum. Yellow interior wall
+                                colour combination ideas cheer up a room and lighten the mood.</p>
+                            <!-- Button trigger modal -->
+                            <a href="https://www.bergerpaints.com/get-inspired/interior-paint-ideas"><button
+                                    type="button" class="btn btn-outline-danger">Visit Official Site</button></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://bestmediainfo.com/wp-content/uploads/2020/01/UC-New-Logo_1.jpg"
+                            class="card-img-top" alt="Urban Company" height="286px">
+                        <div class="card-body">
+                            <h5 class="card-title">The Urban Company</h5>
+                            <p class="card-text">A lot of people write in on social media to ask what colour they should
+                                paint their walls. While we do suggest wall paint colours.</p>
+                            <!-- Button trigger modal -->
+                            <a
+                                href="https://www.urbancompany.com/blog/interiors/popular-wall-paint-colours-indian-homes/"><button
+                                    type="button" class="btn btn-outline-danger">Visit Official Site</button></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://aapkapainter.com/assets/newdesign/images/logo/logo-square.png"
+                            class="card-img-top" alt="toto" height="286px">
+                        <div class="card-body">
+                            <h5 class="card-title">Aap Ka Painter</h5>
+                            <p class="card-text">Make your kid a book-lover by filling their room with amazing painting
+                                ideas to reproduce their literary tastes.</p>
+                            <!-- Button trigger modal -->
+                            <a href="https://aapkapainter.com/recent-projects"><button type="button"
+                                    class="btn btn-outline-danger">Visit
+                                    Official Site</button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mx-5 my-4">
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://media.glassdoor.com/sqll/910830/housing-com-squarelogo-1442211804166.png"
+                            class="card-img-top" alt="housing.com" height="286px">
+                        <div class="card-body">
+                            <h5 class="card-title">HOUSING.<small>COM</small></h5>
+                            <p class="card-text">If you are bored of simple, blank walls, you can make it look more
+                                creative by visiting our website to learn some techniques.</p><br>
+                            <!-- Button trigger modal -->
+                            <a
+                                href="https://housing.com/news/a-guide-to-choosing-wall-colours-for-each-room-of-your-house/"><button
+                                    type="button" class="btn btn-outline-danger">Visit Official Site</button></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://s3-ap-south-1.amazonaws.com/bot-bkt/prod/53207/53207-L_logo%20.png"
+                            height="286px" class="card-img-top" alt="Live Space logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Livespace</h5>
+                            <p class="card-text">House painting designs and colors interest everyone but our focus is
+                                usually on the shade or finish of wall paints. </p><br>
+                            <!-- Button trigger modal -->
+                            <a
+                                href="https://www.livspace.com/in/magazine/house-painting-designs-and-colors/amp#aoh=16294624023561&csi=1&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s"><button
+                                    type="button" class="btn btn-outline-danger">Visit Official Site</button></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="data:image/png;base64,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"
+                            class="card-img-top" alt="indigo paints logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Indigo Paints</h5>
+                            <p class="card-text">Imagine like a child.
+                                Execute like a professional.
+                                Go ahead, thik out of box and create designs that express your inner child.</p><br>
+                            <!-- Button trigger modal -->
+                            <a
+                                href="https://indigopaints.com/readymade-color-combination/?utm_source=google&utm_medium=cpc&utm_campaign=Core-BMM&utm_content=Readymade_Colour_Combination&utm_term=%2Bwall%20%2Bcolour"><button
+                                    type="button" class="btn btn-outline-danger">Visit Official Site</button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1 style="color: rgb(96, 96, 168);">PAINTERS AROUND YOUR AREA</h1>
+        </div>
+        <div class="row mx-5 my-4">
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://thumbs.dreamstime.com/b/avatar-man-painter-icon-flat-style-illustration-web-127940257.jpg" class="card-img-top" alt="moen-logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Allie Grater <br> <span class="red">$10 per room</span></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae veritatis magni molestias distinctio accusamus expedita.</p>
+                        <!-- Button trigger modal -->
+                        <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://thumbs.dreamstime.com/b/avatar-man-painter-icon-flat-style-illustration-web-127940257.jpg" class="card-img-top" alt="prince-logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Isabelle Ringing <br> <span class="red">$12 per room</span></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, odit! Esse alias dolorum facere at.</p>
+                        <!-- Button trigger modal -->
+                        <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://thumbs.dreamstime.com/b/avatar-man-painter-icon-flat-style-illustration-web-127940257.jpg" class="card-img-top" alt="housejoy">
+                    <div class="card-body">
+                        <h5 class="card-title">Bea Mine <br> <span class="red">$9 per room</span></h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus in voluptate sint illo quasi optio.
+                            <br><br></p>
+                        <!-- Button trigger modal -->
+                        <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row mx-5 my-4">
+            <div class="col-md-4 d-flex justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://thumbs.dreamstime.com/b/avatar-man-painter-icon-flat-style-illustration-web-127940257.jpg" class="card-img-top" alt="kohler">
+                    <div class="card-body">
+                        <h5 class="card-title">Rose Bush <br> <span class="red">$10 per room</span></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iusto! Ut fugit omnis aut facilis!</p>
+                        <!-- Button trigger modal -->
+                        <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://thumbs.dreamstime.com/b/avatar-man-painter-icon-flat-style-illustration-web-127940257.jpg" class="card-img-top" alt="grohe" height="282px">
+                    <div class="card-body">
+                        <h5 class="card-title">Ivana B. Withew <br> <span class="red">$10 per room</span></h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos minima, incidunt accusantium aspernatur ipsum laboriosam.</p>
+                        <!-- Button trigger modal -->
+                        <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://thumbs.dreamstime.com/b/avatar-man-painter-icon-flat-style-illustration-web-127940257.jpg" class="card-img-top" alt="toto" height="282px">
+                    <div class="card-body">
+                        <h5 class="card-title">Theresa Green <br> <span class="red">$10 per room</span></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusamus odio libero nihil voluptates laboriosam.</p>
+                        <!-- Button trigger modal -->
+                        <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row mx-5 my-4">
+            <div class="col-md-4 d-flex justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://thumbs.dreamstime.com/b/avatar-man-painter-icon-flat-style-illustration-web-127940257.jpg" class="card-img-top" alt="American Standard" height="286px">
+                    <div class="card-body">
+                        <h5 class="card-title">Sarah Moanees <br> <span class="red">$15 per room</span></h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum officiis quos velit nemo. Atque, ea.<br><br></p>
+                        <!-- Button trigger modal -->
+                        <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://thumbs.dreamstime.com/b/avatar-man-painter-icon-flat-style-illustration-web-127940257.jpg" height="286px" class="card-img-top" alt="Benjamin franklin">
+                    <div class="card-body">
+                        <h5 class="card-title">Sly Meedentalfloss <br> <span class="red">$12 per room</span></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laudantium soluta voluptate mollitia minima corporis. </p>
+                        <!-- Button trigger modal -->
+                        <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://thumbs.dreamstime.com/b/avatar-man-painter-icon-flat-style-illustration-web-127940257.jpg" class="card-img-top" alt="DRPOTTS">
+                    <div class="card-body">
+                        <h5 class="card-title">Anne T. Dote <br> <span class="red">$14 per room</span></h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum dignissimos earum mollitia neque magnam veniam..<br>
+                        </p>
+                        <!-- Button trigger modal -->
+                        <a href="registration.html"><button type="button" class="btn btn-outline-danger">Hire Me Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-dark alert-dismissible fade show" role="alert" style="word-spacing: 5px;">
+        <strong>Note:</strong> We won't be accountable for any type of mismanagement by our partners. We only act as a
+        mediator.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div><br><br>
+    <!-- footer -->
+    <div class="container-fluid futter" style="background-color: rgb(28,35,49);" id="footer">
+        <div class="row foot-logo">
+            <div class="col-sm-3 px-0">
+                <img src="media/hps-logo3.png" alt="logo-foot" width="100%" style="float: left;">
+            </div>
+            <div class="col-sm-3 offset-md-6" style="padding-top: 40px;text-align: center;">
+                <a href="https://www.facebook.com/pratham.savjani"><i class="fab fa-facebook fa-3x"
+                        style="color: rgb(17,151,245);"></i><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+                <a href="https://instagram.com/memes_p.s?utm_medium=copy_link"><i class="fab fa-instagram fa-3x"
+                        style="color: rgb(220,61,129);"></i><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+                <a href="https://github.com/PrathamSavjani"><i class="fab fa-github fa-3x"
+                        style="color: rgb(255, 255, 255);"></i><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+                <a href="https://in.linkedin.com/in/pratham-savjani-475366203"><i class="fab fa-linkedin fa-3x"
+                        style="color: rgb(76,110,245);"></i></a>
+            </div>
+        </div>
+        <p class="COPY" style="color: white;">© Made by Pratham Savjani</p>
+    </div>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</body>
+
+</html>
